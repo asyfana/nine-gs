@@ -22,7 +22,7 @@ st.set_page_config(
 st.sidebar.title("Main Menu")
 formside = st.sidebar.form("side_form")
 #choose = formside.radio("Choose which data you want to see",["Whole data","Cp", "Lp","Rp","Graphite Batch 3","Graphite Batch 4","Graphite Batch 5","slider"], index=None)
-choose = formside.radio("Choose which data you want to see",["Whole data","Graphite Batch 3","Graphite Batch 4","Graphite Batch 5"], index=None)
+choose = formside.radio("Choose which data you want to see",["Whole data","Graphite Batch 3"], index=None)
 formside.form_submit_button("Submit")
 #df = pd.read_excel("NYmasterdatabase.xlsx")
 df = pd.read_csv(r"NYmasterdatabase.csv")
