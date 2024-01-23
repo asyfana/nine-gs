@@ -73,7 +73,8 @@ elif (choose == "Graphite Batch 3"):
     # dfrpcleaned = df.copy()
     # dflpcleaned = df.copy()
     
-    dfBatch3 = pd.read_excel(r"Graphite Batch 3.xlsx", sheet_name= "RawData")
+   # dfBatch3 = pd.read_excel(r"Graphite Batch 3.xlsx", sheet_name= "RawData")
+    dfBatch3 = pd.read_csv(r"Graphite Batch 3.csv")
     wholerawdata = dfBatch3[['Freq','Cp','CpD','Rp','RpQ','Lp','LpQ']]
     st.dataframe(wholerawdata)
 
