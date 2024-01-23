@@ -154,7 +154,7 @@ elif (choose == "Graphite Batch 3"):
     col2.line_chart(dflpcleaned, x="Freq",y="Lp", use_container_width=True)
     col2.scatter_chart(dflpcleaned, x="Freq",y="Lp", use_container_width=True)
 
-    st.line_chart(dflpcleaned, x="Freq",y="Lp", use_container_width=True)
+    #st.line_chart(dflpcleaned, x="Freq",y="Lp", use_container_width=True)
 
     # df1 = pd.DataFrame({'id': ['A01', 'A02', 'A03', 'A04'],
     #                 'Name': ['ABC', 'PQR', 'DEF', 'GHI']})
