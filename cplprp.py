@@ -23,7 +23,7 @@ formside = st.sidebar.form("side_form")
 #choose = formside.radio("Choose which data you want to see",["Whole data","Cp", "Lp","Rp","Graphite Batch 3","Graphite Batch 4","Graphite Batch 5","slider"], index=None)
 choose = formside.radio("Choose which data you want to see",["Whole data","Graphite Batch 3","Graphite Batch 4","Graphite Batch 5","slider"], index=None)
 formside.form_submit_button("Submit")
-df = pd.read_excel(r"C:\Users\Asus\AppData\Local\Programs\Python\Python312\Work fiiles (Spin Eight)\NYmasterdatabase.xlsx")
+df = pd.read_excel(r"NYmasterdatabase.xlsx")
 df= df.reset_index(drop=True)
 
 if (choose == "Whole data"):
@@ -59,9 +59,9 @@ if (choose == "Whole data"):
 
 elif (choose == "Graphite Batch 3"):
     st.title("Batch 3 of Graphite")
-    dfcpraw = pd.read_excel(r"D:\Nine G Solutions\LCR data\Graphite Batch 3.xlsx", sheet_name= "Cp")
-    dfrpraw = pd.read_excel(r"D:\Nine G Solutions\LCR data\Graphite Batch 3.xlsx", sheet_name= "Rp")
-    dflpraw = pd.read_excel(r"D:\Nine G Solutions\LCR data\Graphite Batch 3.xlsx", sheet_name= "Lp")
+    dfcpraw = pd.read_excel(r"Graphite Batch 3.xlsx", sheet_name= "Cp")
+    dfrpraw = pd.read_excel(r"Graphite Batch 3.xlsx", sheet_name= "Rp")
+    dflpraw = pd.read_excel(r"Graphite Batch 3.xlsx", sheet_name= "Lp")
     dfcpraw = df.reset_index(drop=True)
     dfrpraw = df.reset_index(drop=True)
     dflpraw = df.reset_index(drop=True)
@@ -71,7 +71,7 @@ elif (choose == "Graphite Batch 3"):
     # dfrpcleaned = df.copy()
     # dflpcleaned = df.copy()
     
-    dfBatch3 = pd.read_excel(r"D:\Nine G Solutions\LCR data\Graphite Batch 3.xlsx", sheet_name= "RawData")
+    dfBatch3 = pd.read_excel(r"Graphite Batch 3.xlsx", sheet_name= "RawData")
     wholerawdata = dfBatch3[['Freq','Cp','CpD','Rp','RpQ','Lp','LpQ']]
     st.dataframe(wholerawdata)
 
@@ -223,7 +223,7 @@ elif (choose == "Graphite Batch 3"):
 
 elif (choose == "Graphite Batch 4"):
     st.title("Batch 4 of Graphite")
-    dfBatch4 = pd.read_excel(r"D:\Nine G Solutions\LCR data\Graphite Batch 4.xlsx", sheet_name = "RawData")
+    dfBatch4 = pd.read_excel(r"Graphite Batch 4.xlsx", sheet_name = "RawData")
     st.dataframe(dfBatch4)
     
     # dfcprawB4 = pd.read_excel(r"D:\Nine G Solutions\LCR data\Graphite Batch 4.xlsx", sheet_name= "Cp")
@@ -348,7 +348,7 @@ elif (choose == "Graphite Batch 4"):
 
 elif (choose == "Graphite Batch 5"):
     st.title("Batch 5 of Graphite")
-    dfBatch5 = pd.read_excel(r"C:\Users\Asus\Downloads\Aisyah Internship\Nine G Solutions\Raw data\Batch 5 LCR.xlsx", sheet_name = "RawData")
+    dfBatch5 = pd.read_excel(r"Batch 5 LCR.xlsx", sheet_name = "RawData")
     st.dataframe(dfBatch5)
 
     container = st.container(border=True)
