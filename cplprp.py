@@ -64,9 +64,9 @@ elif (choose == "Graphite Batch 3"):
     # dfcpraw = pd.read_excel(r"Graphite Batch 3.xlsx", sheet_name= "Cp")
     # dfrpraw = pd.read_excel(r"Graphite Batch 3.xlsx", sheet_name= "Rp")
     # dflpraw = pd.read_excel(r"Graphite Batch 3.xlsx", sheet_name= "Lp")
-    dfcpraw = df.reset_index(drop=True)
-    dfrpraw = df.reset_index(drop=True)
-    dflpraw = df.reset_index(drop=True)
+    # dfcpraw = df.reset_index(drop=True)
+    # dfrpraw = df.reset_index(drop=True)
+    # dflpraw = df.reset_index(drop=True)
     
     # Create a copy of the original DataFrame
     # dfcpcleaned = df.copy()
