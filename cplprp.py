@@ -61,9 +61,9 @@ if (choose == "Whole data"):
 
 elif (choose == "Graphite Batch 3"):
     st.title("Batch 3 of Graphite")
-    dfcpraw = pd.read_excel(r"Graphite Batch 3.xlsx", sheet_name= "Cp")
-    dfrpraw = pd.read_excel(r"Graphite Batch 3.xlsx", sheet_name= "Rp")
-    dflpraw = pd.read_excel(r"Graphite Batch 3.xlsx", sheet_name= "Lp")
+    # dfcpraw = pd.read_excel(r"Graphite Batch 3.xlsx", sheet_name= "Cp")
+    # dfrpraw = pd.read_excel(r"Graphite Batch 3.xlsx", sheet_name= "Rp")
+    # dflpraw = pd.read_excel(r"Graphite Batch 3.xlsx", sheet_name= "Lp")
     dfcpraw = df.reset_index(drop=True)
     dfrpraw = df.reset_index(drop=True)
     dflpraw = df.reset_index(drop=True)
